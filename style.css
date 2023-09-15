@@ -85,7 +85,7 @@ body {
 }
 
 .sec-right {
-  background-color: rgba(255, 245, 245, 0.8);
+  background-color: rgba(255, 245, 245, 0.8); 
   height: 100vh;
   width: 50%;
 }
@@ -111,7 +111,6 @@ body {
 }
 
 form {
-  background-color: white;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
   font-family: 'Roboto', sans-serif;
@@ -129,6 +128,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   box-shadow: 0 0 1px black;
+  background-color: white;
 }
 
 input {
@@ -140,7 +140,7 @@ input {
   margin: 0;
   box-sizing: border-box;
   border: 1px solid grey;
-  opacity: 0.15;
+
   border-radius: 5px;
   padding: 5px 0 5px 10px;
   font-size: 0.9rem;
@@ -183,15 +183,43 @@ button {
   color: white;
   font-weight: bold;
   letter-spacing: 1.5px;
+  font-size: 1.1rem;
   
 }
 
 footer p {
   margin-left: 5%;
+  font-weight: bold;
 }
 
 footer p a {
   text-decoration: none;
   font-weight: bold;
   color: rgb(0, 100, 0);
+}
+
+
+
+
+form.submitted input:invalid {
+
+  border: 1px solid red;
+  box-shadow: 0 0 5px red;
+  opacity: 0.2;
+}
+
+.photo-credits {
+  position: absolute;
+  bottom: 0px; 
+  text-align: center;
+  width: 100%;
+}
+
+.photo-credits p {
+  color: lightgray;
+  margin: 3px; 
+}
+
+.photo-credits p a {
+  color: white; 
 }
